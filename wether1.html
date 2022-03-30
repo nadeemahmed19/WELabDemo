@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather</title>
+    <style>
+        *{
+            margin: 1px;
+            padding: 0px;
+        }
+        
+        .container{
+            margin-left: 30%;
+            margin-top:150px;
+            background:linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.61));
+            padding:4em;
+            width: 30%;
+            border:none;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 5px 5px 5px grey;
+        }
+        .display{
+            color: rgba(108, 223, 243, 0.753);
+        }
+        .submit{
+            background-color: #0084ff;
+            border: none;
+            color:white;
+            border-radius: 4px;
+            width:100px;
+            padding:4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1 style="text-align:center;">Weather Forecast</h1>
+    </div>
+    <div class="container">
+        <center>
+        Enter city name : <input type="text" class="city"><br><br>
+        <button class="submit">Search</button>
+    </center>
+        <div class="display">
+        <h2 class="cityname"></h2>
+        <div class="image"></div>
+        <h1 class="temp"></h1>
+        <div class="desc"></div>
+        <p class="humidity"></p>
+        </div>
+
+    </div>
+    <script src="main1.js"></script>
+</body>
+</html>
